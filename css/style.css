@@ -67,6 +67,8 @@ li {
     width: 100%;
     z-index: 10;
     background-color: #0f0f0f;
+    border-bottom-right-radius: 25%;
+    border-bottom-left-radius: 25%;
 }
 
 .header_container {
@@ -172,13 +174,14 @@ body.__TOUCH .menu_list>li._active .menu_sub-list {
     opacity: 1;
     visibility: visible;
     transform: translate(0px, 0px);
+    background-color: #1d1e1c;
     pointer-events: all;
-    /* box-shadow: 0px 0px 7px #0000ff; */
-    border: 1px solid #292727;
+    box-shadow: 0px 0px 7px #232342;
+    border: 1px solid #4a4646;
 }
 
 body.__TOUCH .menu_list>li._active .menu_arrow {
-    border-top: 16px solid #ff0000;
+    border-top: 16px solid #d11919;
     transform: rotate(-180deg);
 }
 
@@ -189,7 +192,7 @@ body.__TOUCH .menu_list>li._active .menu_arrow {
     position: absolute;
     top: 100%;
     right: 0;
-    background-color: #0f0f0f;
+    background-color: #332c2c;
     border-radius: 7px;
     box-shadow: inset 0px 0px 100px rgba(0, 0, 0, 0.527);
     padding: 15px;
@@ -271,12 +274,12 @@ li {
         transform: scale(0) translate(0px, -50%);
     }
     .menu_icon._active::before {
-        background-color: #ff0000;
+        background-color: #b50505;
         top: 50%;
         transform: rotate(-45deg) translate(1px, -50%);
     }
     .menu_icon._active::after {
-        background-color: #ff0000;
+        background-color: #b50505;
         bottom: 50%;
         transform: rotate(45deg) translate(1px, 50%);
     }
@@ -288,24 +291,29 @@ li {
         top: 0;
         background-color: rgba(0, 0, 0, 0.9);
         padding: 100p 30px 30px 30px;
-        transition: left 0.3s ease 0s;
+        transition: left 0.1s ease 0s;
         overflow: auto;
     }
     .menu_body._active {
         left: 0;
     }
-    .menu_lis::before {
+    .menu_body::before {
         content: "";
         position: fixed;
         width: 100%;
         top: 0;
         left: 0;
         height: 70px;
-        background-color: #000;
-        z-index: 2;
+        background-color: rgb(0, 0, 0);
+        z-index: 5;
+        box-shadow: 1px 1px 10px #3f3f68;
+        /* border-radius: 25%; */
+        border-bottom-right-radius: 25%;
+        border-bottom-left-radius: 25%;
     }
     .menu_list {
-        padding: 70px 30px 0px 30px;
+        z-index: 2;
+        padding: 100px 30px 0px 30px;
     }
     .menu_list>li {
         /* text-align: center; */
