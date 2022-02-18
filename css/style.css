@@ -43,18 +43,14 @@ body._lock {
 
 /* eslint-disable-next-line */
 
-.page_section2 {
-    background-color: blue;
-}
+.page_section2 {}
 
 .page_sub-title {
     font-size: 30px;
     margin: 0px 0px 20px 0px;
 }
 
-.page_section3 {
-    background-color: tomato;
-}
+.page_section3 {}
 
 li {
     text-decoration: none;
@@ -66,9 +62,7 @@ li {
     left: 0;
     width: 100%;
     z-index: 10;
-    background-color: #0f0f0f;
-    border-bottom-right-radius: 25%;
-    border-bottom-left-radius: 25%;
+    background-color: #242222;
 }
 
 .header_container {
@@ -310,12 +304,11 @@ li {
         top: 0;
         left: 0;
         height: 70px;
-        background-color: rgb(0, 0, 0);
+        background-color: #242222;
         z-index: 5;
-        box-shadow: 1px 1px 10px #3f3f68;
-        /* border-radius: 25%; */
-        border-bottom-right-radius: 25%;
-        border-bottom-left-radius: 25%;
+        box-shadow: -15px 0px 10px #000000;
+        border-bottom-right-radius: 43%;
+        border-top-left-radius: 43%;
     }
     .menu_list {
         z-index: 2;
